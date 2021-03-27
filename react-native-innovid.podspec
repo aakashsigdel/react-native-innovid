@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
   s.authors      = package['author']
   s.homepage     = package['homepage']
-  s.platform     = :ios, "10.0"
+  s.platforms    = { :ios => "9.0", :tvos => "10.0" }
 
   s.source       = { :git => "https://github.com/aakashsigdel/react-native-innovid.git", :tag => "v#{s.version}" }
   s.source_files  = "ios/**/*.{h,m,swift}"
